@@ -6,28 +6,38 @@
 
         <title>Casiano</title>
 
-        <!-- Load external CSS styles -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet'>
+        <link href='https://fonts.google.com/specimen/Montserrat' rel='stylesheet'>
     </head>
 
     <body>
 
-        <h1 style="color:white;">Computer Programming on Java and HTML</h1>
+      <div class='ewan'>
+          <p style="color:white;" class='big'><br><br><br><br><br>Computer Programming on Java and HTML</p>
+          <hr>         
+          <p style="color:white; font-size:20px;" class='gotoleft'>Table of Contents</p>
+          <p style="color:white;" class='gotoleft'>1. Conversion (Celsius to fahrenheit, Fahrenheit to Celsius, Meters to Feet, Feet to Meters)</p>
+          <p style="color:white;" class='gotoleft'>2. Income Tax Calculator</p>
+          <p style="color:white;" class='gotoleft'>3. Factorial, Sum and Average of Firts N Natural Numbers</p>
+          <p style="color:white;" class='gotoleft'>4. Simple Payroll</p>
+        </div>
 
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a >Navigation<br>______________</a>
+            <a href="https://pacasiano.github.io/Simple-Computations/">Home</a>
+            <a href="https://pacasiano.github.io/Simple-Computations/">About</a><br>
+            <a >Assignments<br>______________</a>
             <a href="https://pacasiano.github.io/Simple-Computations/">Simple Computations</a>
             <a href="#">other</a>
             <a href="#">other</a>
             <a href="#">other</a>
           </div>
           
-          <div id="main">
-            <h2 style="color:white;">Press to Navigate</h2>
-            <span style="font-size:30px;cursor:pointer; color:white" class="top-left" onclick="openNav()">&#9776; Open</span>
-            <p style="color:white;">The inclusion in this Website is Peter Andre Casiano's works on Java and Html.</p>
+          <div id="main">    
+            <span style="font-size:30px;cursor:pointer; color:white" class="top-left" onclick="openNav()">&#9776;</span>
           </div>
+
           
           <script>
           function openNav() {
@@ -45,7 +55,7 @@
 <style>
 
 html {    
-    background: url('pics2.png') no-repeat center fixed;     
+    background: url('picsf.png') no-repeat center fixed;     
     background-size: cover;
 }
 
@@ -57,13 +67,33 @@ html {
 
 h1 {
     text-align: center;
-    font-family: 'gotham';
+    font-family: 'Montserrat', 'semi bold';
     font-weight: bolder;
-    font-size: 45px;
+    font-size: 20px;
+}
+
+hr {
+  border: 3px solid white;
+}
+
+.big {
+  font-size: 20pt;
+  font-weight: bolder;
+}
+
+.ewan {
+margin: auto;
+width: 45%;
+border: 5px;
+padding: 20px;
 }
 
 a, h2, p {
-  font-family: 'Arvo';
+  font-family: 'Montserrat', 'bold 700';
+}
+
+.gotoleft {
+  text-align: left;
 }
 
 button {
@@ -125,6 +155,7 @@ p.important {
 }
 
 .sidenav a {
+  
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
