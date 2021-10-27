@@ -1,192 +1,189 @@
-<!doctype html>
+<!DOCTYPE HTML>
 
 <html>
     <head>
         <meta charset="utf-8">
-
         <title>Casiano</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--css here-->
+		<!--fonts-->
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Montserrat:500;700;800;900');
+			
+			@font-face{
+			font-family: Montserrat_700;
+			src: url('https://fonts.googleapis.com/css2?family=Montserrat:700');
+			font-weight: 700;
+			}
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='https://fonts.google.com/specimen/Montserrat' rel='stylesheet'>
-    </head>
+			html {
+            background: black; 
+			background-size: cover;
+			}
+			
+			body {
+			background-color: black;
+			font-family: 'Montserrat';
+			}
+			
+			.container {
+			margin: auto;
+			width: 45%;
+			border: 5px;
+			padding: 20px;
+			}
+			
+			.top-left {
+			position: absolute;
+			top: 8px;
+			left: 16px;
+			}
+			
+			#main {
+			transition: margin-left .5s;
+			padding: 16px;
+			}
 
-    <body>
+			@media screen and (max-height: 450px) {
+			.sidenav {padding-top: 15px;}
+			.sidenav a {font-size: 18px;}
+			}
+			
+			.sidenav {
+			height: 100%;
+			width: 0;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: #111;
+			overflow-x: hidden;
+			transition: 0.5s;
+			padding-top: 60px;
+			}
 
-      <div class='ewan'>
-          <p style="color:white;" class='big'><br><br><br><br><br>Computer Programming on Java and HTML</p>
-          <hr>         
-          <p style="color:white; font-size:20px;" class='gotoleft'>Table of Contents</p>
-          <p style="color:white;" class='gotoleft'>1. Conversion (Celsius to fahrenheit, Fahrenheit to Celsius, Meters to Feet, Feet to Meters)</p>
-          <p style="color:white;" class='gotoleft'>2. Income Tax Calculator</p>
-          <p style="color:white;" class='gotoleft'>3. Factorial, Sum and Average of Firts N Natural Numbers</p>
-          <p style="color:white;" class='gotoleft'>4. Simple Payroll</p>
-        </div>
+			.sidenav a {
+			padding: 8px 8px 8px 8px;
+			text-decoration: none;
+			font-size: 18px;
+			color: #818181;
+			display: block;
+			transition: 0.3s;
+			}
 
-        <div id="mySidenav" class="sidenav">
+			.sidenav a:hover {
+			color: #ffffff;
+			}
+
+			.sidenav hr {
+			width: 80%;
+			margin-top: 10px;
+			margin-left: 0;
+			}
+			
+			.sidenav .closebtn {
+			position: absolute;
+			top: 0;
+			right: 25px;
+			font-size: 36px;
+			margin-left: 50px;
+			}
+			
+			h1 {
+			font-size: 100px;
+			color: white;
+			-webkit-mask-image: url('img/maskpic.png');
+			-o-mask-image: url('img/maskpic.png');
+			-moz-mask-image: url('img/maskpic.png');
+			-ms-mask-image: url('img/maskpic.png');
+			mask-image: url('img/maskpic.png');
+			display:block;
+			}
+			
+			p {
+			color: white;
+			text-align: left;
+			}
+			
+			a {
+			font-weight: bolder;
+			font-size: 14px;
+			padding-left: 25%;
+			padding-right: 25%;
+            }
+			
+			p.subtitle {
+			font-size: 26px;
+			font-weight: 800;
+			display: block;
+			}
+			
+			p.main {
+			font-size: 20px;
+			font-weight: 800;
+			}
+			
+			hr {
+			height: 10%;
+			background-color: white;
+			border: 10;
+			}
+
+            div > img {
+            width: auto;
+            height: auto;
+            max-height: 100%;
+            max-width: 100%;
+            }
+
+		</style>
+	</head>
+
+	<body>
+		<!--main website-->
+		<div class="container">
+			<img src='picsf.png'>
+			<p class="subtitle">Computer Programming on Java and HTML</p>
+			<hr>
+			<p class="p.main">Table of Contents</p>
+			<p class='p.main'>1. Conversion (Celsius to fahrenheit, Fahrenheit to Celsius, Meters to Feet, Feet to Meters)</p>
+            <p class='p.main'>2. Income Tax Calculator</p>
+            <p class='p.main'>3. Factorial, Sum and Average of Firts N Natural Numbers</p>
+            <p class='p.main'>4. Simple Payroll</p>
+            <hr>
+		</div>
+
+		<!--navigation-->
+
+		<div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a >Navigation<br>______________</a>
+            <a>Navigation<br><hr></a>
             <a href="https://pacasiano.github.io/Simple-Computations/">Home</a>
             <a href="https://pacasiano.github.io/Simple-Computations/">About</a><br>
-            <a >Assignments<br>______________</a>
+            <a>Assignments<br><hr></a>
             <a href="https://pacasiano.github.io/Simple-Computations/">Simple Computations</a>
             <a href="#">other</a>
             <a href="#">other</a>
             <a href="#">other</a>
-          </div>
-          
+		</div>
+        
+         <!--pointer-->
           <div id="main">    
             <span style="font-size:30px;cursor:pointer; color:white" class="top-left" onclick="openNav()">&#9776;</span>
           </div>
 
+			<script>
+				function openNav() {
+				document.getElementById("mySidenav").style.width = "250px";
+				document.getElementById("main").style.marginLeft = "250px";
+				}
           
-          <script>
-          function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
-          }
-          
-          function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginLeft= "0";
-          }
-          </script>
-
-
-<style>
-
-html {    
-    background: url('picsf.png') no-repeat center fixed;     
-    background-size: cover;
-}
-
-.top-left {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-}
-
-h1 {
-    text-align: center;
-    font-family: 'Montserrat', 'semi bold';
-    font-weight: bolder;
-    font-size: 20px;
-}
-
-hr {
-  border: 3px solid white;
-}
-
-.big {
-  font-size: 20pt;
-  font-weight: bolder;
-}
-
-.ewan {
-margin: auto;
-width: 45%;
-border: 5px;
-padding: 20px;
-}
-
-a, h2, p {
-  font-family: 'Montserrat', 'bold 700';
-}
-
-.gotoleft {
-  text-align: left;
-}
-
-button {
-    font-family: 'Arvo';
-    font-weight: normal;
-}
-
-p.important { 
-    color:white;
-}
-
-.dropbtn {
-  background-color: burlywood;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: burlywood;}
-
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
-        
-    </body>
-
+				function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+				document.getElementById("main").style.marginLeft= "0";
+				}
+			</script>
+	</body>
+	<footer>
+	</footer>
 </html>
