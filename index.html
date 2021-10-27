@@ -8,12 +8,12 @@
 
         <!-- Load external CSS styles -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet'>
     </head>
 
     <body>
 
-        <h1 style="color:white;">Comprog</h1>
+        <h1 style="color:white;">Computer Programming on Java and HTML</h1>
 
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -25,7 +25,7 @@
           
           <div id="main">
             <h2 style="color:white;">Press to Navigate</h2>
-            <span style="font-size:30px;cursor:pointer; color:white" onclick="openNav()">&#9776; open</span>
+            <span style="font-size:30px;cursor:pointer; color:white" class="top-left" onclick="openNav()">&#9776; Open</span>
             <p style="color:white;">The inclusion in this Website is Peter Andre Casiano's works on Java and Html.</p>
           </div>
           
@@ -45,27 +45,29 @@
 <style>
 
 html {    
-    background: url('20210410_221617755_iOS.jpg') no-repeat center fixed;     
+    background: url('pics2.png') no-repeat center fixed;     
     background-size: cover;
-
-    filter: blur(8px);
-  -webkit-filter: blur(8px);
-
 }
 
-
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
 
 h1 {
     text-align: center;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'gotham';
     font-weight: bolder;
-    font-size: bold;
+    font-size: 45px;
 }
 
+a, h2, p {
+  font-family: 'Arvo';
+}
 
 button {
-     text-align: center;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Arvo';
     font-weight: normal;
 }
 
