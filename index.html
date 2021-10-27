@@ -8,8 +8,6 @@
 		<!--css here-->
 		<!--fonts-->
 		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Montserrat:500;700;800;900');
-			
 			@font-face{
 			font-family: Montserrat_700;
 			src: url('https://fonts.googleapis.com/css2?family=Montserrat:700');
@@ -38,6 +36,12 @@
 			top: 8px;
 			left: 16px;
 			}
+
+			.bottomleft {
+  			position: absolute;
+  			bottom: 8px;
+			right: 16px;
+			}	
 			
 			#main {
 			transition: margin-left .5s;
@@ -87,17 +91,6 @@
 			right: 25px;
 			font-size: 36px;
 			margin-left: 50px;
-			}
-			
-			h1 {
-			font-size: 100px;
-			color: white;
-			-webkit-mask-image: url('img/maskpic.png');
-			-o-mask-image: url('img/maskpic.png');
-			-moz-mask-image: url('img/maskpic.png');
-			-ms-mask-image: url('img/maskpic.png');
-			mask-image: url('img/maskpic.png');
-			display:block;
 			}
 			
 			p {
@@ -158,13 +151,17 @@
 		<div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a>Navigation<br><hr></a>
-            <a href="https://pacasiano.github.io/Simple-Computations/">Home</a>
+            <a href="https://pacasiano.github.io/casiano/">Home</a>
             <a href="https://pacasiano.github.io/Simple-Computations/">About</a><br>
             <a>Assignments<br><hr></a>
             <a href="https://pacasiano.github.io/Simple-Computations/">Simple Computations</a>
-            <a href="#">other</a>
-            <a href="#">other</a>
-            <a href="#">other</a>
+            <a href="#">otherIncome Tax Calculator</a>
+            <a href="#">Factorial sum of N Natural Numbers</a>
+            <a href="#">Simple Payroll</a>
+		</div>
+
+		<div class='bottomleft'>
+			<p>Peter Andre Casiano | CompSci | 1-A</p>
 		</div>
         
          <!--pointer-->
